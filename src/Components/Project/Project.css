@@ -1,0 +1,190 @@
+.projects {
+    padding: 80px 0;
+    background: var(--secondary-bg, #0F0F20);
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects-header p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.projects-container {
+    position: relative;
+    min-height: 400px;
+}
+
+/* Grid for a single page of projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+/* Class to show the current page of projects */
+.projects-grid.active-page {
+    opacity: 1;
+    position: relative;
+    pointer-events: all;
+}
+
+.project-card {
+   background: rgba(15, 15, 32, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    height: 50%;
+    border-radius: 16px;
+    /* padding: 15px 30px; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   transition: transform 0.5s ease;
+   display: block;
+   margin: 0 auto;
+   transition: transform 0.5s ease;
+    padding: 10px;
+
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Text content within a project card */
+.project-content {
+    padding: 20px;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-category {
+    color: var(--accent-pink);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* The circular "view project" button */
+.project-icon-btn {
+    position: absolute;
+    bottom: -285px;
+    right: -30px;
+    width: 170px;
+    height: 170px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+
+.project-icon-btn:hover {
+    color: var(--accent-pink);
+    transform: scale(1.1);
+    /* filter: drop-shadow(0 0 8px rgba(244, 114, 182, 0.6)); */
+}
+
+.icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Pagination dots for project pages */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    /* Adjusted margin-top to ensure visibility */
+    margin-top: 50px;  
+    position: relative;  
+    z-index: 10; 
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Style for the active pagination dot */
+.dot.active {
+    width: 24px;
+    border-radius: 6px;
+    background: linear-gradient(to right, var(--accent-pink), var(--accent-purple));
+}
+
+@media (max-width: 1024px){
+    
+    .projects {
+        padding: 24px 42px;
+    }
+    .projects-header{
+        font-size: 1.2rem;
+    }
+} 
+
+@media (max-width: 768px) {
+    .projects{
+        padding: 24px 12px;
+    }
+
+    .projects-header p {
+        font-size: 0.9rem;
+    }
+    
+    .project-image img {
+        padding: 5px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+}

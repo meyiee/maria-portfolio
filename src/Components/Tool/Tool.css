@@ -1,0 +1,85 @@
+.tool-section {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    padding: 60px 0;
+}
+
+.tool:hover {
+    transform: scale(1.1);
+    background: rgba(168, 85, 247, 0.3);
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.icon-row img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(84%) saturate(1106%) hue-rotate(241deg) brightness(89%) contrast(94%);
+}
+
+.icon-row img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1080px) {
+    .tool-section {
+        padding: 24px 32px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .icon-row {
+        gap: 1.5rem;
+    }
+} 
+
+@media (max-width: 768px) { 
+
+    .subtitle {
+    font-size: .8rem;
+}
+
+.tool-section{
+    padding: 24px 64px ;
+
+    }
+
+.icon-row {
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-section {
+        padding: 24px 24px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .icon-row {
+        gap: 1rem;
+    }
+}
+    

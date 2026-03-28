@@ -1,0 +1,117 @@
+:root {
+    --primary-bg: #000018;
+    --secondary-bg: #0F0F20;
+    --accent-pink: #F472B6;
+    --accent-purple: #A855F7;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --card-bg: rgba(15, 15, 32, 0.5);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Base for section padding */
+section {
+    padding: 24px 0;
+    position: relative;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Reusable gradient text style */
+.gradient-text {
+    background: linear-gradient(to right, var(--accent-purple), var(--accent-pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Reusable gradient line for under titles */
+.gradient-line {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(to right, var(--accent-purple), var(--accent-pink));
+    margin: 0 auto 30px;
+    border-radius: 3px;
+}
+
+/* Base button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+/* Primary button with gradient */
+.btn-primary {
+    background: linear-gradient(to right, var(--accent-purple), var(--accent-pink));
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);
+}
+
+/* Outlined button style */
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width:1024px) {
+    .section-title {
+        font-size: 3.5rem;
+    }
+    .section-title p{
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
