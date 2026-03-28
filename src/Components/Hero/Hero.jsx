@@ -53,7 +53,9 @@ const Hero = () => {
               UX/UI Designer passionate about creating beautiful and intuitive user experiences.
             </p>
             <div className="hero-buttons">
-              <a href="#" className="btn-primary">
+              <a href="maria_cv.pdf" 
+                className="btn-primary"
+                download="maria_cv.pdf">
                 <i className="fas fa-download"></i>
                 Download CV
               </a>
@@ -62,9 +64,9 @@ const Hero = () => {
               </AnchorLink>
             </div>
             <div className="social-links">
-              <a href="#" className="social-link"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="social-link"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#" className="social-link"><i className="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/mary.obinga.7" className="social-link"><i className="fab fa-facebook-f"></i></a>
+              <a href="www.linkedin.com/in/mary-obinga-b45208321" className="social-link"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/meyiee" className="social-link"><i className="fab fa-github"></i></a>
             </div>
           </div>
           <div className="hero-image">

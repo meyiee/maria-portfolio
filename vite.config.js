@@ -4,9 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/maria-portfolio/', 
   server: {
-    host: true, // Allows access from other devices on the network
-    port: 5173, // Default Vite port
-    strictPort: true, // Ensures the server fails if the port is already in use
+    host: true,
+    port: 5173,
+    strictPort: true,
   },
 })

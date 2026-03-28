@@ -210,3 +210,8 @@
 .nav-menu.active li:nth-child(5) { transition-delay: 0.3s; }
 }
 
+
+/* ── MODAL OPEN: push navbar behind lightbox overlay ── */
+body.modal-open .navbar {
+    z-index: 0;
+}
