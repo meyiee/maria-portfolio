@@ -41,7 +41,7 @@
 
 @media (max-width: 1080px) {
     .tool-section {
-        padding: 24px 32px;
+        padding: 64px;
     }
 
     .subtitle {
@@ -54,13 +54,12 @@
 } 
 
 @media (max-width: 768px) { 
-
     .subtitle {
     font-size: .8rem;
-}
+    }
 
 .tool-section{
-    padding: 24px 64px ;
+    padding: 64px ;
 
     }
 
@@ -70,8 +69,9 @@
 }
 
 @media (max-width: 480px) {
+
     .tool-section {
-        padding: 24px 24px;
+        padding: 78px 24px 24px;
     }
 
     .subtitle {

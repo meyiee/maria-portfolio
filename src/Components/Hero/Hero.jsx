@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import './Hero.css';
-import profile_img from '../../assets/heroimage.png';
+import profile_img from '../../assets/her.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
@@ -67,6 +67,7 @@ const Hero = () => {
               <a href="https://www.facebook.com/mary.obinga.7" className="social-link"><i className="fab fa-facebook-f"></i></a>
               <a href="www.linkedin.com/in/mary-obinga-b45208321" className="social-link"><i className="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/meyiee" className="social-link"><i className="fab fa-github"></i></a>
+               <a href="" className="social-link"><i class="fa-brands fa-viber"></i></a>
             </div>
           </div>
           <div className="hero-image">

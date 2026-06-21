@@ -15,7 +15,6 @@ const Footer = () => {
                     <div className="link-group">
                         <h4>Quick Links</h4>
                         <a href="#home">Home</a>
-                        <a href="#about">About</a>
                         <a href="#skills">Services</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
@@ -25,7 +24,7 @@ const Footer = () => {
                         <a href="#"><i className="fab fa-facebook-f"></i><span> Facebook</span></a>
                         <a href="#"><i className="fab fa-linkedin-in"></i><span>LinkedIn</span> </a>
                         <a href="#"><i className="fab fa-github"></i><span>GitHub</span> </a>
-                        <a href="#"><i className="fab fa-dribbble"></i><span>Dribbble</span> </a>
+                        <a href="#"><i className="fab fa-viber"></i><span>Viber</span> </a>
                     </div>
                 </div>
             </div>

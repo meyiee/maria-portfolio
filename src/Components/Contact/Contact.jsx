@@ -38,11 +38,11 @@ export default function Contact() {
                     <div className="contact-details">
                         <div className="contact-item">
                             <i className="fas fa-envelope"></i>
-                            <span>hello@maria.com</span>
+                            <span>maryobinga8@gmail.com</span>
                         </div>
                         <div className="contact-item">
                             <i className="fas fa-phone"></i>
-                            <span>+63 912 345 6789</span>
+                            <span>+63 966 974 7164</span>
                         </div>
                         <div className="contact-item">
                             <i className="fas fa-map-marker-alt"></i>
